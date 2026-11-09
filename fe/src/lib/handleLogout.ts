@@ -10,7 +10,7 @@ export async function handleLogout() {
     store.dispatch(deleteInfo());
     store.dispatch(deleteToken());
     await authApi.post(
-      "/api/auth/logout",
+      "/auth/logout",
       {},
       {
         withCredentials: true,
