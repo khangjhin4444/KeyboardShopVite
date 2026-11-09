@@ -60,7 +60,7 @@ describe("handleLogout", () => {
     expect(deleteToken).toHaveBeenCalledOnce();
 
     expect(authApi.post).toHaveBeenCalledWith(
-      "/api/auth/logout",
+      "/auth/logout",
       {},
       { withCredentials: true },
     );
